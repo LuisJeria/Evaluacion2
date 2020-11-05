@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PrincipalActivity">
+    <include layout="@layout/covid_toolbar">
+
+    </include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/examenes_efectuados"
+        android:textSize="@dimen/tamanio_titulo_principal"
+        android:gravity="center"
+        android:padding="@dimen/padding_principal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+    <ListView
+        android:id="@+id/pacientes_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+</LinearLayout>

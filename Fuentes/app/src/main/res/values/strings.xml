@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RegistroCovidApp</string>
+    <string name="titulo_main_app">SISTEMA DE REGISTRO DE PACIENTES COVID</string>
+    <string name="usuario">USUARIO:</string>
+    <string name="ingrese_usuario">"RUT sin puntos y con guión "</string>
+    <string name="password">CONTRASEÑA:</string>
+    <string name="ingrese_passwd">Contraseña</string>
+    <string name="ingresar">INICIAR SESION</string>
+    <string name="examenes_efectuados">EXAMENES EFECTUADOS</string>
+    <string name="datos_del_paciente">DATOS DEL PACIENTE</string>
+</resources>
