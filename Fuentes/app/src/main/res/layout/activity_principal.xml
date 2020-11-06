@@ -19,21 +19,21 @@
         android:padding="@dimen/padding_principal"
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/agregar_btn_fb"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:src="@drawable/ic_baseline_add_circle_outline_24">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
     <ListView
         android:id="@+id/pacientes_lv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </ListView>
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/agregar_btn_fb"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="@dimen/margin_fbtn"
-        android:background="@color/colorAccent"
-        android:src="@drawable/ic_baseline_add_circle_outline_24">
 
-    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
 </LinearLayout>
