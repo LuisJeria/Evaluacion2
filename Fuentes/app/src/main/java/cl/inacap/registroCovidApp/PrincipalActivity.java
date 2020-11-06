@@ -37,7 +37,9 @@ public class PrincipalActivity extends AppCompatActivity {
         this.pacientesLV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Paciente paciente = pacientes.get(position);
                 Intent intent = new Intent(PrincipalActivity.this,VerPacienteActivity.class);
+                intent.putExtra("paciente",paciente);
                 startActivity(intent);
             }
         });

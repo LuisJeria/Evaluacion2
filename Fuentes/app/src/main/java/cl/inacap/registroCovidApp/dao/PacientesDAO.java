@@ -8,4 +8,5 @@ public interface PacientesDAO {
 
     Paciente save(Paciente p);
     List<Paciente> getAll();
+    List<Paciente> getByRut(String s);
 }

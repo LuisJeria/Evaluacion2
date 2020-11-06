@@ -26,5 +26,7 @@
     <dimen name="margin_btn_registro">20dp</dimen>
 
     <dimen name="padding_detalle_titulo">20dp</dimen>
+    <dimen name="padding_detalle">15dp</dimen>
+    <dimen name="tamanio_form_datos">20sp</dimen>
 
 </resources>

@@ -82,4 +82,47 @@ public class PacientesDAOSQLite implements PacientesDAO {
         }
         return pacientes;
     }
+
+    @Override
+    public List<Paciente> getByRut(String s) {
+
+        SQLiteDatabase reader = this.pacientesDB.getReadableDatabase();
+        List<Paciente> pacientes = new ArrayList<>();
+
+        try{
+            if(reader != null){
+                Cursor c = reader.rawQuery("SELECT id,rut,nombre,apellido,fecha,areaTrabajo,sintoma,temperatura,tos," +
+                        "presionArterial FROM pacientes WHERE rut ='" + s + "'",null);
+                if(c.moveToFirst()){
+                    do{
+                        Paciente p = new Paciente();
+                        p.setId(c.getInt(0));
+                        p.setRut(c.getString(1));
+                        p.setNombre(c.getString(2));
+                        p.setApellido(c.getString(3));
+                        p.setFechaExamen(c.getString(4));
+                        p.setAreaTrabajo(c.getString(5));
+                        if(c.getInt(6)==1){
+                            p.setSintoma(true);
+                        }else{
+                            p.setSintoma(false);
+                        }
+                        p.setTemperatura(c.getFloat(7));
+                        if(c.getInt(8)==1){
+                            p.setTos(true);
+                        }else{
+                            p.setTos(false);
+                        }
+                        p.setPresionArterial(c.getInt(9));
+                        pacientes.add(p);
+                    }while(c.moveToNext());
+                }
+                reader.close();
+            }
+
+        }catch (Exception e){
+            pacientes = null;
+        }
+        return pacientes;
+    }
 }

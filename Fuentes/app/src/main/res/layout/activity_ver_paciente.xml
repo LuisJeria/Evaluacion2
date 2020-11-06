@@ -18,5 +18,34 @@
         android:textStyle="bold"
         android:textSize="@dimen/tamanio_titulo_ver"
         android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:id="@+id/rut_detalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamanio_form_datos"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:padding="@dimen/padding_detalle"/>
+    <TextView
+        android:id="@+id/nombre_completo_detalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamanio_form_datos"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:padding="@dimen/padding_detalle"/>
+    <TextView
+        android:id="@+id/trabajo_detalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamanio_form_datos"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:padding="@dimen/padding_detalle"/>
+    <ListView
+        android:id="@+id/detalle_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 
 </LinearLayout>

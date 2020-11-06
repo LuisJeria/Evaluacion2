@@ -21,4 +21,9 @@
     <string name="ingrese_temperatura_form">TEMPERATURA</string>
     <string name="presenta_tos">¿PRESENTA TOS?</string>
     <string name="ingrese_presion_arterial">PRESION ARTERIAL</string>
+    <string name="fecha_examen">Fecha Examen</string>
+    <string name="presenta_sintomas">¿Presenta Sintomas?</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="tiene_tos">¿Tiene Tos?</string>
+    <string name="pres_arterial">Pres Arterial</string>
 </resources>
