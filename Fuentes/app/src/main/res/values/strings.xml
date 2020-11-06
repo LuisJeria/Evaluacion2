@@ -8,4 +8,17 @@
     <string name="ingresar">INICIAR SESION</string>
     <string name="examenes_efectuados">EXAMENES EFECTUADOS</string>
     <string name="datos_del_paciente">DATOS DEL PACIENTE</string>
+    <string name="registro_de_pacientes">REGISTRO DE PACIENTE</string>
+    <string name="ingrese_rut_form">RUT</string>
+    <string name="ingrese_rut">Sin puntos y con guión</string>
+    <string name="ingrese_nombre">Ingresar Nombre</string>
+    <string name="ingrese_nombre_form">NOMBRE</string>
+    <string name="ingrese_apellido_form">APELLIDO</string>
+    <string name="ingrese_apellido">Ingresar Apellido</string>
+    <string name="ingrese_fecha_form">FECHA EXAMEN</string>
+    <string name="seleccione_area_form">AREA TRABAJO</string>
+    <string name="presenta_sintomas_de_covid">¿SINTOMAS DE COVID?</string>
+    <string name="ingrese_temperatura_form">TEMPERATURA</string>
+    <string name="presenta_tos">¿PRESENTA TOS?</string>
+    <string name="ingrese_presion_arterial">PRESION ARTERIAL</string>
 </resources>

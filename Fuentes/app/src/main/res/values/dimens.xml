@@ -18,4 +18,9 @@
     <dimen name="padding_ver">10dp</dimen>
     <dimen name="tamanio_form_ver">15sp</dimen>
     <dimen name="padding_form_ver">5sp</dimen>
+    <dimen name="margin_fbtn">20dp</dimen>
+    <dimen name="tamanio_titulo_registro">25sp</dimen>
+    <dimen name="padding_registro">8dp</dimen>
+    <dimen name="tamanio_form_registro">18sp</dimen>
+    <dimen name="margin_btn_registro">20dp</dimen>
 </resources>

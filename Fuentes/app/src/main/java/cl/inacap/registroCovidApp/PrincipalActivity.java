@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.List;
 
 import cl.inacap.registroCovidApp.adapters.PacientesListAdapter;
@@ -22,6 +24,7 @@ public class PrincipalActivity extends AppCompatActivity {
     private PacientesDAO pacientesDAO = new PacientesDAOSQLite(this);
     private ListView pacientesLV;
     private PacientesListAdapter pAdapter;
+    private FloatingActionButton agregarFBtn;
 
     @Override
     protected void onResume() {
@@ -34,8 +37,8 @@ public class PrincipalActivity extends AppCompatActivity {
         this.pacientesLV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //Intent intent = new Intent(PrincipalActivity.this,VerPacienteActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(PrincipalActivity.this,VerPacienteActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -45,5 +48,12 @@ public class PrincipalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
         this.setSupportActionBar((Toolbar)findViewById(R.id.toolbar));
+        this.agregarFBtn = findViewById(R.id.agregar_btn_fb);
+        this.agregarFBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PrincipalActivity.this,RegistrarPacienteActivity.class));
+            }
+        });
     }
 }

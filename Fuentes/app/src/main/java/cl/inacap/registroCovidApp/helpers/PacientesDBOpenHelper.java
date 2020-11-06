@@ -28,7 +28,7 @@ public class PacientesDBOpenHelper extends SQLiteOpenHelper {
 
         db.execSQL(this.sqlCreate);
         db.execSQL("INSERT INTO pacientes(rut,nombre,apellido,fecha,areaTrabajo,sintoma,temperatura,tos,presionArterial) VALUES ('7420329-9','Paciente','Prueba','03/11/2020','Otro',0,36.9,0,120)");
-        db.execSQL("INSERT INTO pacientes(rut,nombre,apellido,fecha,areaTrabajo,sintoma,temperatura,tos,presionArterial) VALUES ('7420329-9','Paciente','Prueba','03/11/2020','Otro',1,39.9,1,130)");
+        db.execSQL("INSERT INTO pacientes(rut,nombre,apellido,fecha,areaTrabajo,sintoma,temperatura,tos,presionArterial) VALUES ('7420329-9','Paciente','Prueba','05/11/2020','Otro',1,39.9,1,130)");
     }
 
     @Override
